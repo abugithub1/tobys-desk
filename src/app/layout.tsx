@@ -3,6 +3,7 @@ import { Outfit, Caveat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ChatAgent from "@/components/ChatAgent";
 import { CystProvider } from "@/context/CystContext";
 
 const outfit = Outfit({
@@ -34,6 +35,7 @@ export default function RootLayout({
           <Navbar />
           <main className="pb-12 flex-1">{children}</main>
           <Footer />
+          <ChatAgent />
         </CystProvider>
       </body>
     </html>
