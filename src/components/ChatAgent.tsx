@@ -163,8 +163,8 @@ export default function ChatAgent() {
                 <img src="/squishmallow.png" alt="" className="w-7 h-7 object-contain" />
               </div>
               <div>
-                <h3 className="text-sm font-semibold text-rose-900">Revision Tutor</h3>
-                <p className="text-xs text-rose-400">Jaw cysts & oral pathology</p>
+                <h3 className="text-sm font-semibold text-rose-900">Dr. Tooth</h3>
+                <p className="text-xs text-rose-400">Toby&apos;s revision tooter</p>
               </div>
             </div>
           </div>
@@ -174,7 +174,7 @@ export default function ChatAgent() {
             {messages.length === 0 && (
               <div className="space-y-3">
                 <p className="text-sm text-rose-400 text-center py-2">
-                  Hi! I&apos;m your revision tutor. Ask me anything about jaw cysts, or try:
+                  Hi! I&apos;m Dr. Tooth, your revision buddy. Ask me anything or try:
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {SUGGESTIONS.map((s) => (
