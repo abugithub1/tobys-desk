@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
+import ReactMarkdown from "react-markdown";
 
 interface Message {
   role: "user" | "assistant";
@@ -134,21 +135,21 @@ export default function ChatAgent() {
 
   return (
     <>
-      {/* Floating squishmallow button */}
+      {/* Floating Dr. Tooth button */}
       <button
         onClick={() => setOpen((prev) => !prev)}
-        className="fixed bottom-6 right-6 z-50 w-18 h-18 rounded-full bg-white shadow-lg shadow-pink-200/60 transition-all hover:scale-110 active:scale-95 flex items-center justify-center border-2 border-pink-100 hover:border-pink-300 hover:shadow-xl hover:shadow-pink-200/80"
-        aria-label={open ? "Close chat" : "Open revision tutor"}
+        className="fixed bottom-6 right-6 z-50 w-20 h-20 rounded-full bg-white shadow-lg shadow-pink-200/60 transition-all hover:scale-110 active:scale-95 flex items-center justify-center border-2 border-pink-100 hover:border-pink-300 hover:shadow-xl hover:shadow-pink-200/80 overflow-hidden"
+        aria-label={open ? "Close chat" : "Open Dr. Tooth"}
       >
         {open ? (
-          <svg className="w-6 h-6 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-7 h-7 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
           </svg>
         ) : (
           <img
-            src="/squishmallow.png"
-            alt="Chat with revision tutor"
-            className="w-14 h-14 object-contain"
+            src="/dr-tooth.png"
+            alt="Chat with Dr. Tooth"
+            className="w-16 h-16 object-cover rounded-full"
           />
         )}
       </button>
@@ -160,7 +161,7 @@ export default function ChatAgent() {
           <div className="flex-shrink-0 px-4 py-3 border-b border-pink-100 bg-gradient-to-r from-pink-50 to-rose-50">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-full bg-pink-50 flex items-center justify-center overflow-hidden border border-pink-100">
-                <img src="/squishmallow.png" alt="" className="w-7 h-7 object-contain" />
+                <img src="/dr-tooth.png" alt="" className="w-7 h-7 object-contain" />
               </div>
               <div>
                 <h3 className="text-sm font-semibold text-rose-900">Dr. Tooth</h3>
@@ -196,13 +197,21 @@ export default function ChatAgent() {
                 className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
               >
                 <div
-                  className={`max-w-[85%] rounded-2xl px-3 py-2 text-sm whitespace-pre-wrap ${
+                  className={`max-w-[85%] rounded-2xl px-3 py-2 text-sm ${
                     msg.role === "user"
                       ? "bg-pink-500 text-white rounded-br-md"
                       : "bg-pink-50 text-rose-900 rounded-bl-md border border-pink-100"
                   }`}
                 >
-                  {msg.content || (
+                  {msg.content ? (
+                    msg.role === "assistant" ? (
+                      <div className="chat-markdown">
+                        <ReactMarkdown>{msg.content}</ReactMarkdown>
+                      </div>
+                    ) : (
+                      <span className="whitespace-pre-wrap">{msg.content}</span>
+                    )
+                  ) : (
                     <span className="inline-flex gap-1">
                       <span className="w-1.5 h-1.5 rounded-full bg-pink-300 animate-bounce" style={{ animationDelay: "0ms" }} />
                       <span className="w-1.5 h-1.5 rounded-full bg-pink-300 animate-bounce" style={{ animationDelay: "150ms" }} />
