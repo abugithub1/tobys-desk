@@ -17,6 +17,7 @@ const SUGGESTIONS = [
 
 export default function ChatAgent() {
   const [open, setOpen] = useState(false);
+  const [expanded, setExpanded] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [streaming, setStreaming] = useState(false);
@@ -148,38 +149,62 @@ export default function ChatAgent() {
 
   return (
     <>
-      {/* Floating Dr. Tooth button */}
-      <button
-        onClick={() => setOpen((prev) => !prev)}
-        className="fixed bottom-6 right-6 z-50 w-20 h-20 rounded-full bg-white shadow-lg shadow-pink-200/60 transition-all hover:scale-110 active:scale-95 flex items-center justify-center border-2 border-pink-100 hover:border-pink-300 hover:shadow-xl hover:shadow-pink-200/80 overflow-hidden"
-        aria-label={open ? "Close chat" : "Open Dr. Tooth"}
-      >
-        {open ? (
-          <svg className="w-7 h-7 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        ) : (
-          <img
-            src="/dr-tooth.png"
-            alt="Chat with Dr. Tooth"
-            className="w-16 h-16 object-cover rounded-full"
-          />
-        )}
-      </button>
+      {/* Floating Dr. Tooth button — hidden when expanded */}
+      {!expanded && (
+        <button
+          onClick={() => setOpen((prev) => !prev)}
+          className="fixed bottom-6 right-6 z-50 w-20 h-20 rounded-full bg-white shadow-lg shadow-pink-200/60 transition-all hover:scale-110 active:scale-95 flex items-center justify-center border-2 border-pink-100 hover:border-pink-300 hover:shadow-xl hover:shadow-pink-200/80 overflow-hidden"
+          aria-label={open ? "Close chat" : "Open Dr. Tooth"}
+        >
+          {open ? (
+            <svg className="w-7 h-7 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          ) : (
+            <img
+              src="/dr-tooth.png"
+              alt="Chat with Dr. Tooth"
+              className="w-16 h-16 object-cover rounded-full"
+            />
+          )}
+        </button>
+      )}
 
       {/* Chat panel */}
       {open && (
-        <div className="fixed bottom-24 right-6 z-50 w-[380px] max-w-[calc(100vw-48px)] h-[520px] max-h-[calc(100vh-140px)] bg-white rounded-2xl shadow-2xl shadow-pink-200/50 border border-pink-200 flex flex-col overflow-hidden">
+        <div
+          className={`fixed z-50 bg-white shadow-2xl shadow-pink-200/50 border border-pink-200 flex flex-col overflow-hidden transition-all duration-300 ease-in-out ${
+            expanded
+              ? "top-0 right-0 bottom-0 w-[420px] rounded-l-2xl"
+              : "bottom-24 right-6 w-[380px] max-w-[calc(100vw-48px)] h-[520px] max-h-[calc(100vh-140px)] rounded-2xl"
+          }`}
+        >
           {/* Header */}
           <div className="flex-shrink-0 px-4 py-3 border-b border-pink-100 bg-gradient-to-r from-pink-50 to-rose-50">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-full bg-pink-50 flex items-center justify-center overflow-hidden border border-pink-100">
                 <img src="/dr-tooth.png" alt="" className="w-7 h-7 object-contain" />
               </div>
-              <div>
+              <div className="flex-1">
                 <h3 className="text-sm font-semibold text-rose-900">Dr. Tooth</h3>
                 <p className="text-xs text-rose-400">Toby&apos;s revision tooter</p>
               </div>
+              {/* Expand/collapse — hidden on mobile */}
+              <button
+                onClick={() => setExpanded((prev) => !prev)}
+                className="hidden md:flex w-8 h-8 items-center justify-center rounded-lg hover:bg-pink-100 text-pink-400 hover:text-pink-600 transition-colors"
+                aria-label={expanded ? "Collapse chat" : "Expand chat"}
+              >
+                {expanded ? (
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 9l6 6 6-6" />
+                  </svg>
+                ) : (
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                  </svg>
+                )}
+              </button>
             </div>
           </div>
 
