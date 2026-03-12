@@ -82,7 +82,7 @@ export const defaultCysts: Cyst[] = [
     name: "Nasolabial (Nasoalveolar) Cyst",
     removal: "Surgical excision biopsy. Developmental cyst, possibly fissural or from nasolacrimal duct. Peak incidence in females aged 40-60. Presents as swelling of nasolabial fold/buccal sulcus. May cause resorption of underlying bone.",
     imageUrl: "/images/nasolabial-cyst.png",
-    slideDescription: "Swelling in nasolabial fold region - soft tissue cyst, not within bone"
+    slideDescription: "No clinical image in lecture slides - soft tissue cyst of nasolabial fold"
   },
   {
     id: "solitary-bone-cyst",
