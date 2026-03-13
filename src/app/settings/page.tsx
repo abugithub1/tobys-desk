@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback } from "react";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import SettingsTable from "@/components/SettingsTable";
@@ -10,17 +10,35 @@ function SettingsContent() {
   const searchParams = useSearchParams();
   const initialTopic = searchParams.get('topic') || 'all';
   const [selectedTopic, setSelectedTopic] = useState(initialTopic);
+  const [search, setSearch] = useState("");
   const { content, questions, isLoaded, resetProgress, resetAllProgress } = useOsce();
 
+  const searchWords = useMemo(() =>
+    search.toLowerCase().split(/\s+/).filter(Boolean),
+    [search]
+  );
+
+  const matchesSearch = useCallback((texts: string[]) => {
+    if (searchWords.length === 0) return true;
+    const combined = texts.join(" ").toLowerCase();
+    return searchWords.some(word => combined.includes(word));
+  }, [searchWords]);
+
   const filteredContent = useMemo(() => {
-    if (selectedTopic === 'all') return content;
-    return content.filter(c => c.topic === selectedTopic);
-  }, [content, selectedTopic]);
+    let items = selectedTopic === 'all' ? content : content.filter(c => c.topic === selectedTopic);
+    if (searchWords.length > 0) {
+      items = items.filter(c => matchesSearch([c.topic, c.title, c.text, ...c.keyPoints, ...c.keywords]));
+    }
+    return items;
+  }, [content, selectedTopic, searchWords, matchesSearch]);
 
   const filteredQuestions = useMemo(() => {
-    if (selectedTopic === 'all') return questions;
-    return questions.filter(q => q.topic === selectedTopic);
-  }, [questions, selectedTopic]);
+    let items = selectedTopic === 'all' ? questions : questions.filter(q => q.topic === selectedTopic);
+    if (searchWords.length > 0) {
+      items = items.filter(q => matchesSearch([q.topic, q.question, q.answer, q.explanation || '', q.type, q.difficulty || '']));
+    }
+    return items;
+  }, [questions, selectedTopic, searchWords, matchesSearch]);
 
   if (!isLoaded) {
     return <div className="text-center py-12 text-pink-400">Loading...</div>;
@@ -29,7 +47,18 @@ function SettingsContent() {
   return (
     <div className="pt-8 pb-16 max-w-6xl mx-auto px-4">
       <h1 className="text-3xl font-bold text-rose-800 mb-2">Settings & Data</h1>
-      <p className="text-rose-400 mb-6">View and manage revision content and progress</p>
+      <p className="text-rose-400 mb-4">View and manage revision content and progress</p>
+
+      {/* Search */}
+      <div className="mb-4">
+        <input
+          type="text"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          placeholder="Search across all columns..."
+          className="w-full max-w-md px-4 py-2.5 rounded-xl border border-pink-200 bg-white text-sm text-rose-900 placeholder:text-rose-300 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent"
+        />
+      </div>
 
       {/* Topic Filter */}
       <div className="flex flex-wrap gap-2 mb-6">
