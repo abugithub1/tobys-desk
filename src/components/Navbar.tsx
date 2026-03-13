@@ -38,6 +38,16 @@ export default function Navbar() {
             Jaw Cysts
           </Link>
           <Link
+            href="/revise/all"
+            className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+              pathname.startsWith("/revise")
+                ? "bg-pink-500 text-white shadow-md shadow-pink-200"
+                : "text-pink-700 hover:text-pink-900 hover:bg-pink-100"
+            }`}
+          >
+            OSCE Revise
+          </Link>
+          <Link
             href="/settings"
             className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
               pathname === "/settings"

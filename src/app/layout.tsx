@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ChatAgent from "@/components/ChatAgent";
 import { CystProvider } from "@/context/CystContext";
+import { OsceProvider } from "@/context/OsceContext";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -32,10 +33,12 @@ export default function RootLayout({
         style={{ fontFamily: "var(--font-outfit), system-ui, sans-serif" }}
       >
         <CystProvider>
-          <Navbar />
-          <main className="pb-12 flex-1">{children}</main>
-          <Footer />
-          <ChatAgent />
+          <OsceProvider>
+            <Navbar />
+            <main className="pb-12 flex-1">{children}</main>
+            <Footer />
+            <ChatAgent />
+          </OsceProvider>
         </CystProvider>
       </body>
     </html>
