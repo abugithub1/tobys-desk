@@ -26,6 +26,18 @@ export default function ChatAgent() {
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const userScrolledUp = useRef(false);
 
+  // When expanded, push page content left so it's not hidden
+  useEffect(() => {
+    if (expanded) {
+      document.body.style.marginRight = "420px";
+    } else {
+      document.body.style.marginRight = "";
+    }
+    return () => {
+      document.body.style.marginRight = "";
+    };
+  }, [expanded]);
+
   const scrollToBottom = useCallback(() => {
     if (!userScrolledUp.current) {
       messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
