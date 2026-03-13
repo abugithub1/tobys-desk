@@ -20,6 +20,80 @@ body {
   color: var(--color-foreground);
 }
 
+/* ─── Dark mode ─── */
+
+html.dark {
+  color-scheme: dark;
+
+  /* Page */
+  --color-background: #0c0a10;
+  --color-foreground: #ede4ed;
+
+  /* White → dark card surface */
+  --color-white: #161220;
+
+  /* Pink shades — subtle dark tints for surfaces & borders */
+  --color-pink-50: #1a1428;
+  --color-pink-100: #201830;
+  --color-pink-200: #382540;
+  --color-pink-300: #904878;
+
+  /* Rose — invert text hierarchy so dark shades become light */
+  --color-rose-50: #1a1220;
+  --color-rose-100: #221628;
+  --color-rose-300: #786068;
+  --color-rose-400: #987080;
+  --color-rose-600: #c08898;
+  --color-rose-700: #d0a0b0;
+  --color-rose-800: #e0b8c8;
+  --color-rose-900: #e8d0dc;
+  --color-rose-950: #f0e8ee;
+
+  /* Status — darker tinted backgrounds, keep indicator colours readable */
+  --color-green-50: #0a1a10;
+  --color-green-100: #0f2818;
+  --color-red-50: #1a0a0c;
+  --color-red-100: #280f12;
+  --color-red-200: #3a1820;
+  --color-amber-100: #1a1608;
+  --color-violet-100: #1a1030;
+  --color-blue-100: #101828;
+  --color-emerald-100: #0f1a14;
+}
+
+/* Keep text-white readable on accent buttons in dark mode */
+html.dark .text-white {
+  color: #ffffff !important;
+}
+
+/* Keep gradient button sub-text readable */
+html.dark .text-pink-100 {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Footer & surfaces with opacity modifiers — override directly */
+html.dark footer {
+  background-color: #12101a !important;
+}
+
+/* Navbar bg-white/80 — make translucent dark */
+html.dark nav {
+  background-color: rgba(12, 10, 16, 0.85) !important;
+}
+
+/* Shadows — use dark tones instead of pink/white glow */
+html.dark [class*="shadow-pink-200"],
+html.dark [class*="shadow-pink-100"] {
+  --tw-shadow-color: rgba(0, 0, 0, 0.4) !important;
+}
+html.dark [class*="shadow-lg"],
+html.dark [class*="shadow-xl"],
+html.dark [class*="shadow-2xl"] {
+  --tw-shadow-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* ─── Card flip ─── */
+
 .card-flip {
   transition: transform 0.6s ease-in-out;
   transform-style: preserve-3d;
@@ -37,7 +111,8 @@ body {
   transform: rotateY(180deg);
 }
 
-/* Chat markdown styles */
+/* ─── Chat markdown ─── */
+
 .chat-markdown p {
   margin-bottom: 0.5em;
 }
@@ -47,6 +122,9 @@ body {
 .chat-markdown strong {
   font-weight: 700;
   color: #881337;
+}
+html.dark .chat-markdown strong {
+  color: #f0b8c8;
 }
 .chat-markdown em {
   font-style: italic;
@@ -69,6 +147,11 @@ body {
   color: #881337;
   margin: 0.6em 0 0.3em;
 }
+html.dark .chat-markdown h1,
+html.dark .chat-markdown h2,
+html.dark .chat-markdown h3 {
+  color: #f0b8c8;
+}
 .chat-markdown h1 { font-size: 1.1em; }
 .chat-markdown h2 { font-size: 1.05em; }
 .chat-markdown h3 { font-size: 1em; }
@@ -78,9 +161,16 @@ body {
   padding: 0.1em 0.3em;
   font-size: 0.9em;
 }
+html.dark .chat-markdown code {
+  background: #2a1838;
+}
 .chat-markdown blockquote {
   border-left: 3px solid #f9a8d4;
   padding-left: 0.75em;
   margin: 0.4em 0;
   color: #9d174d;
+}
+html.dark .chat-markdown blockquote {
+  border-left-color: #904878;
+  color: #d0a0b0;
 }

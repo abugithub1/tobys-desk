@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
+import { usePathname } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 
 interface Message {
@@ -16,6 +17,7 @@ const SUGGESTIONS = [
 ];
 
 export default function ChatAgent() {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [expanded, setExpanded] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
@@ -159,6 +161,9 @@ export default function ChatAgent() {
     }
   }
 
+  // Hide on login page
+  if (pathname === "/login") return null;
+
   return (
     <>
       {/* Floating Dr. Tooth button — hidden when expanded */}
@@ -284,7 +289,7 @@ export default function ChatAgent() {
                 onKeyDown={handleKeyDown}
                 placeholder="Ask me anything..."
                 rows={1}
-                className="flex-1 resize-none rounded-xl border border-pink-200 bg-pink-50/50 px-3 py-2 text-sm text-rose-900 placeholder:text-rose-300 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent"
+                className="flex-1 resize-none rounded-xl border border-pink-200 bg-pink-50/50 px-3 py-2 text-[16px] sm:text-sm text-rose-900 placeholder:text-rose-300 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent"
               />
               <button
                 onClick={() => sendMessage(input)}

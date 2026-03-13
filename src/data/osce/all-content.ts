@@ -27,6 +27,7 @@ import { content_p51, questions_p51 } from './chunk_p51';
 import { content_p53, questions_p53 } from './chunk_p53';
 import { content_p55, questions_p55 } from './chunk_p55';
 import { content_p57, questions_p57 } from './chunk_p57';
+import { jawCystsContent, jawCystsQuestions } from './jaw-cysts';
 
 export const allContent: ContentItem[] = [
   ...content1,
@@ -54,6 +55,7 @@ export const allContent: ContentItem[] = [
   ...content_p53,
   ...content_p55,
   ...content_p57,
+  ...jawCystsContent,
 ];
 
 export const allQuestions: Question[] = [
@@ -82,4 +84,5 @@ export const allQuestions: Question[] = [
   ...questions_p53,
   ...questions_p55,
   ...questions_p57,
+  ...jawCystsQuestions,
 ];

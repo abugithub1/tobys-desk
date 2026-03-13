@@ -56,6 +56,7 @@ export interface TopicConfig {
 }
 
 export const TOPIC_CONFIGS: TopicConfig[] = [
+  { id: 'jaw-cysts', name: 'Jaw Cysts', description: 'Identify cysts from clinical images, radiographs, and learn removal/management methods', icon: '🦷', color: 'from-pink-400 to-rose-500', category: 'Oral Surgery' },
   { id: 'splinting-trauma', name: 'Splinting & Trauma', description: 'Placing splints, avulsed teeth, broken teeth, fractured tuberosity, trauma charts', icon: '🦷', color: 'from-red-400 to-rose-500', category: 'Oral Surgery' },
   { id: 'bridges', name: 'Bridges', description: 'Bridge types (fixed-fixed, cantilever, resin bonded), faults, failure reasons, and repair', icon: '🌉', color: 'from-blue-400 to-indigo-500', category: 'Prosthodontics' },
   { id: 'dentures', name: 'Dentures', description: 'Denture faults, complaints, care instructions, acrylic faults, and common problems', icon: '🦷', color: 'from-purple-400 to-violet-500', category: 'Prosthodontics' },
