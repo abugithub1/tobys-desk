@@ -18,7 +18,7 @@ export const content_p21: ContentItem[] = [
       'Some patients can be completely asymptomatic'
     ],
     keywords: ['oroantral communication', 'OAC', 'oroantral fistula', 'antral', 'sinus perforation', 'asymptomatic'],
-    imageUrl: '/images/osce/page21_img01.png',
+    imageUrl: '/images/osce/page21_img01.webp',
     imageAlt: 'Diagram of oroantral communication showing incision and buccal advancement flap',
     pageRef: 21
   },
@@ -68,7 +68,7 @@ export const content_p21: ContentItem[] = [
       'Must identify the main problem and list 3 problems with the malocclusion'
     ],
     keywords: ['IOTN', 'index of treatment need', 'orthodontics', 'malocclusion', 'grade 3', 'grade 4', 'grade 5'],
-    imageUrl: '/images/osce/page21_img02.jpeg',
+    imageUrl: '/images/osce/page21_img02.webp',
     imageAlt: 'IOTN grading table showing grades 3, 4 and 5 criteria',
     pageRef: 21
   },
@@ -140,7 +140,7 @@ export const content_p21: ContentItem[] = [
       'Feel the dot – convex side faces towards you'
     ],
     keywords: ['rearranging radiographs', 'bite wings', 'uppers skinny', 'lowers fat', 'feel the dot', 'convex', '3 roots', 'PA'],
-    imageUrl: '/images/osce/page22_img01.jpeg',
+    imageUrl: '/images/osce/page22_img01.webp',
     imageAlt: 'Set of periapical radiographs arranged showing upper and lower teeth',
     pageRef: 22
   },
@@ -159,7 +159,7 @@ export const content_p21: ContentItem[] = [
       'Crowding of lower anteriors is NOT an indication'
     ],
     keywords: ['wisdom teeth', 'third molar', 'NICE guidelines', 'ARMHIT', 'impaction', 'lower 8', 'upper 8', 'ID nerve'],
-    imageUrl: '/images/osce/page22_img02.jpeg',
+    imageUrl: '/images/osce/page22_img02.webp',
     imageAlt: 'Cross section and radiographic appearance of inferior dental canal relationship to roots',
     pageRef: 22
   },
@@ -180,7 +180,7 @@ export const content_p21: ContentItem[] = [
       'Angulation: mesioangular (most common), vertical, distoangular, horizontal'
     ],
     keywords: ['pericoronitis', 'trismus', 'metronidazole', 'amoxicillin', 'operculum', 'mesioangular', 'angulation'],
-    imageUrl: '/images/osce/page22_img03.jpeg',
+    imageUrl: '/images/osce/page22_img03.webp',
     imageAlt: 'Wisdom tooth angulation types: vertical, mesioangular, distoangular, horizontal',
     pageRef: 22
   },

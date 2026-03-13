@@ -21,7 +21,7 @@ export const content_p19: ContentItem[] = [
       'Seek support from trusted colleague or counselling if needed'
     ],
     keywords: ['safeguarding', 'child protection', 'social services', 'referral', 'defence organisation', '48 hours'],
-    imageUrl: '/images/osce/page19_img01.png',
+    imageUrl: '/images/osce/page19_img01.webp',
     imageAlt: 'Table showing safeguarding actions, responsibilities and team members',
     pageRef: 19
   },
@@ -68,7 +68,7 @@ export const content_p19: ContentItem[] = [
       'OPG is the investigation of choice to evaluate delayed eruption'
     ],
     keywords: ['delayed eruption', 'mesiodens', 'supernumerary', 'cleidocranial dysostosis', 'hypothyroidism', 'preterm birth', 'ectopic eruption', 'OPG'],
-    imageUrl: '/images/osce/page20_img01.png',
+    imageUrl: '/images/osce/page20_img01.webp',
     imageAlt: 'Flowchart showing normal vs abnormal tooth development and causes of delayed eruption',
     pageRef: 19
   },
@@ -88,7 +88,7 @@ export const content_p19: ContentItem[] = [
       'Systemic factors: preterm/low birth weight, nutrition, Vit D resistant rickets, Down\'s syndrome, hypopituitarism'
     ],
     keywords: ['eruption sequestrum', 'amelogenesis imperfecta', 'dentinogenesis imperfecta', 'regional odontodysplasia', 'ankylosis', 'gingival hyperplasia'],
-    imageUrl: '/images/osce/page20_img01.png',
+    imageUrl: '/images/osce/page20_img01.webp',
     imageAlt: 'Table of radiographically evident vs non-evident causes of delayed eruption',
     pageRef: 20
   },
@@ -110,7 +110,7 @@ export const content_p19: ContentItem[] = [
       'Same direction as tube = lingual; opposite direction = buccal'
     ],
     keywords: ['SLOB', 'parallax', 'lingual', 'buccal', 'impacted teeth', 'periapical', 'localisation'],
-    imageUrl: '/images/osce/page20_img02.jpeg',
+    imageUrl: '/images/osce/page20_img02.webp',
     imageAlt: 'Two periapical radiographs showing SLOB rule with supernumerary tooth labelled A',
     pageRef: 20
   },
@@ -421,7 +421,7 @@ export const questions_p19: Question[] = [
     type: 'flashcard',
     question: 'Explain the SLOB rule and how it is used.',
     answer: 'SLOB = Same Lingual, Opposite Buccal.\n\nParallax technique using two PAs to localise impacted teeth:\n1. Select a known fixed object and an unknown object visible on both images\n2. Determine direction the X-ray tube has moved\n3. Determine direction unknown object moves relative to fixed object\n4. If unknown moves SAME direction as tube → LINGUAL\n5. If unknown moves OPPOSITE direction to tube → BUCCAL\n\nVertically: tube down + tooth down = lingual; tube up + tooth down = buccal.',
-    imageUrl: '/images/osce/page20_img02.jpeg',
+    imageUrl: '/images/osce/page20_img02.webp',
     imageAlt: 'Two periapical radiographs demonstrating the SLOB rule',
     keywords: ['SLOB', 'parallax', 'lingual', 'buccal', 'impacted'],
     difficulty: 'medium'

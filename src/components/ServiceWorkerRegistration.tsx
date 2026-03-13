@@ -10,7 +10,7 @@ export default function ServiceWorkerRegistration() {
         .then((reg) => {
           // If SW is already active, tell it to pre-cache routes
           if (reg.active) {
-            reg.active.postMessage("PRECACHE_ROUTES");
+            reg.active.postMessage("PRECACHE_ALL");
           }
           // When a new SW becomes active, trigger pre-cache
           reg.addEventListener("updatefound", () => {
@@ -18,7 +18,7 @@ export default function ServiceWorkerRegistration() {
             if (newWorker) {
               newWorker.addEventListener("statechange", () => {
                 if (newWorker.state === "activated") {
-                  newWorker.postMessage("PRECACHE_ROUTES");
+                  newWorker.postMessage("PRECACHE_ALL");
                 }
               });
             }

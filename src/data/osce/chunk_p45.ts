@@ -17,7 +17,7 @@ export const content_p45: ContentItem[] = [
       'History of subluxation injury at age 8'
     ],
     keywords: ['pulp canal obliteration', 'tertiary dentine', 'subluxation', 'sclerotic', 'discolouration', 'trauma', 'UL1'],
-    imageUrl: '/images/osce/page45_img01.jpeg',
+    imageUrl: '/images/osce/page45_img01.webp',
     imageAlt: 'X-ray showing pulp canal obliteration of UL1 with sclerotic canal',
     pageRef: 45
   },
@@ -37,7 +37,7 @@ export const content_p45: ContentItem[] = [
       'Crown: more destructive, only if heavily restored, 1/5 (20%) chance of devitalising'
     ],
     keywords: ['discolouration', 'bleaching', 'veneer', 'crown', 'microabrasion', 'internal bleaching', 'RCT'],
-    imageUrl: '/images/osce/page45_img01.jpeg',
+    imageUrl: '/images/osce/page45_img01.webp',
     imageAlt: 'Discoloured UL1 following pulp canal obliteration',
     pageRef: 45
   },

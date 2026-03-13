@@ -19,7 +19,7 @@ export const content1: ContentItem[] = [
       'Wear glasses and gloves, stabilise tooth with gauze'
     ],
     keywords: ['splint', 'avulsed', 'composite', 'wire', '0.6mm', 'incisal third', 'acid etch'],
-    imageUrl: '/images/osce/page01_img01.jpeg',
+    imageUrl: '/images/osce/page01_img01.webp',
     imageAlt: 'Bridge types shown on dental models',
     pageRef: 1
   },
@@ -35,7 +35,7 @@ export const content1: ContentItem[] = [
       'Preparations need to be parallel'
     ],
     keywords: ['fixed-fixed', 'bridge', 'abutment', 'rigid connector', 'parallel'],
-    imageUrl: '/images/osce/page01_img01.jpeg',
+    imageUrl: '/images/osce/page01_img01.webp',
     imageAlt: 'Fixed-fixed bridge before and after',
     pageRef: 1
   },
@@ -119,7 +119,7 @@ export const content1: ContentItem[] = [
       'Always consider least destructive design'
     ],
     keywords: ['bridge decision', 'resin bonded', 'conventional', 'cantilever', 'implant', 'partial denture'],
-    imageUrl: '/images/osce/page02_img01.png',
+    imageUrl: '/images/osce/page02_img01.webp',
     imageAlt: 'Bridge decision flowchart',
     pageRef: 2
   },
@@ -370,7 +370,7 @@ export const content1: ContentItem[] = [
       'Fully adjustable relies on facebow and tracings'
     ],
     keywords: ['articulator', 'simple hinge', 'FAV', 'semi-adjustable', 'fully adjustable', 'facebow'],
-    imageUrl: '/images/osce/page05_img01.jpeg',
+    imageUrl: '/images/osce/page05_img01.webp',
     imageAlt: 'Simple hinge articulator (Type 1)',
     pageRef: 5
   },
@@ -460,7 +460,7 @@ export const content1: ContentItem[] = [
       'Common faults: lack of material, lack of wash, tray too small'
     ],
     keywords: ['impression faults', 'bubbles', 'voids', 'drags', 'tears', 'blows', 'wash'],
-    imageUrl: '/images/osce/page06_img01.jpeg',
+    imageUrl: '/images/osce/page06_img01.webp',
     imageAlt: 'Impression showing lingual and buccal drag',
     pageRef: 6
   },
@@ -1467,7 +1467,7 @@ export const questions1: Question[] = [
     type: 'flashcard',
     question: 'What three common impression faults relate to material quantity and tray selection?',
     answer: 'Lack of material, lack of wash, and tray too small.',
-    imageUrl: '/images/osce/page06_img01.jpeg',
+    imageUrl: '/images/osce/page06_img01.webp',
     imageAlt: 'Impression fault examples',
     keywords: ['lack of material', 'lack of wash', 'tray too small'], difficulty: 'easy'
   },

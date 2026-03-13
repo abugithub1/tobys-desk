@@ -16,7 +16,7 @@ export const content_p41: ContentItem[] = [
       'Upper anterior forceps are straight, held as extension of forearm'
     ],
     keywords: ['upper forceps', 'compound beak', 'crank', 'straight forceps', 'long axis'],
-    imageUrl: '/images/osce/page41_img01.jpeg',
+    imageUrl: '/images/osce/page41_img01.webp',
     imageAlt: 'Upper posterior forceps — premolar, molar, and third molar types',
     pageRef: 41
   },
@@ -33,7 +33,7 @@ export const content_p41: ContentItem[] = [
       'Cowhorn: narrow beak fits furcation to lift the tooth'
     ],
     keywords: ['lower forceps', 'right angled', 'cowhorn', 'furcation', 'compound beak'],
-    imageUrl: '/images/osce/page41_img03.jpeg',
+    imageUrl: '/images/osce/page41_img03.webp',
     imageAlt: 'Lower forceps — anterior/premolar, molar, and cowhorn types',
     pageRef: 41
   },

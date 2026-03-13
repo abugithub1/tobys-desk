@@ -15,7 +15,7 @@ export const content_p51: ContentItem[] = [
       'Extreme gag reflex compromising past care = High difficulty'
     ],
     keywords: ['AAE', 'endodontic difficulty', 'ASA classification', 'patient considerations', 'gag reflex', 'anesthesia'],
-    imageUrl: '/images/osce/page51_img01.png',
+    imageUrl: '/images/osce/page51_img01.webp',
     imageAlt: 'AAE Endodontic Case Difficulty Assessment Form',
     pageRef: 51
   },
@@ -33,7 +33,7 @@ export const content_p51: ContentItem[] = [
       'Dens in dente or fusion = High crown morphology difficulty'
     ],
     keywords: ['diagnosis', 'radiographic difficulty', 'tooth position', 'crown morphology', 'taurodontism', 'dens in dente'],
-    imageUrl: '/images/osce/page51_img01.png',
+    imageUrl: '/images/osce/page51_img01.webp',
     imageAlt: 'AAE Endodontic Case Difficulty Assessment Form – Diagnostic section',
     pageRef: 51
   },
@@ -85,7 +85,7 @@ export const content_p51: ContentItem[] = [
       'Acute bacterial sialadenitis: Flucloxacillin'
     ],
     keywords: ['amoxicillin', 'metronidazole', 'erythromycin', 'doxycycline', 'flucloxacillin', 'dental abscess', 'ANUG', 'actinomycosis', 'sialadenitis'],
-    imageUrl: '/images/osce/page52_img01.png',
+    imageUrl: '/images/osce/page52_img01.webp',
     imageAlt: 'List of Prescriptions table for dental conditions',
     pageRef: 52
   },

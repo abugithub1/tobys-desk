@@ -20,7 +20,7 @@ export const content_p27: ContentItem[] = [
       'Tube positioned in aiming ring, cone parallel both vertically and horizontally'
     ],
     keywords: ['periapical', 'paralleling technique', 'beam 90 degrees', 'size 2', 'embossed dot', 'aiming ring'],
-    imageUrl: '/images/osce/page27_img01.jpeg',
+    imageUrl: '/images/osce/page27_img01.webp',
     imageAlt: 'Paralleling technique diagram showing film and tooth parallel with beam at 90 degrees',
     pageRef: 27
   },
@@ -90,7 +90,7 @@ export const content_p27: ContentItem[] = [
       'Close lips, swallow, tongue on roof of mouth'
     ],
     keywords: ['OPT', 'orthopantomogram', 'Frankfort plane', 'mandibular fracture', 'TMJ', 'sagittal plane', 'canine light'],
-    imageUrl: '/images/osce/page27_img02.jpeg',
+    imageUrl: '/images/osce/page27_img02.webp',
     imageAlt: 'Panoramic bony anatomy diagram with labelled landmarks on OPT',
     pageRef: 27
   },
@@ -109,7 +109,7 @@ export const content_p27: ContentItem[] = [
       'Other: cervical vertebrae, foramen transversarium, hyoid bone'
     ],
     keywords: ['panoramic anatomy', 'OPT landmarks', 'mental foramen', 'inferior alveolar canal', 'sigmoid notch', 'coronoid process', 'zygomatic arch'],
-    imageUrl: '/images/osce/page27_img02.jpeg',
+    imageUrl: '/images/osce/page27_img02.webp',
     imageAlt: 'Panoramic bony anatomy with 26 labelled landmarks',
     pageRef: 27
   },

@@ -95,7 +95,7 @@ export const content_p33: ContentItem[] = [
       'Associated factors – trismus, fever, swelling'
     ],
     keywords: ['pain history', 'site', 'radiation', 'character', 'severity', 'duration', 'periodicity', 'provoking', 'relieving', 'associated factors'],
-    imageUrl: '/images/osce/page33_img01.jpeg',
+    imageUrl: '/images/osce/page33_img01.webp',
     imageAlt: 'Mind map for clinical diagnosis of pain – dental vs non-dental origin flowchart',
     pageRef: 33
   },
@@ -117,7 +117,7 @@ export const content_p33: ContentItem[] = [
       'Atypical odontalgia → chronic idiopathic facial pain'
     ],
     keywords: ['pain flowchart', 'non-dental origin', 'burning mouth', 'trigeminal neuralgia', 'temporal arteritis', 'TMJPDS', 'sinusitis', 'neoplasm'],
-    imageUrl: '/images/osce/page33_img01.jpeg',
+    imageUrl: '/images/osce/page33_img01.webp',
     imageAlt: 'Mind map for clinical diagnosis of pain – non-dental pain differential diagnosis',
     pageRef: 33
   },

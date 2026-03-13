@@ -12,7 +12,7 @@ export const content_p55: ContentItem[] = [
       'Prepare tooth for rest seat; change design so clasp does not interfere'
     ],
     keywords: ['trial insertion', 'metal framework', 'occlusal interference', 'clasp arm', 'rest seat'],
-    imageUrl: '/images/osce/page55_img01.jpeg',
+    imageUrl: '/images/osce/page55_img01.webp',
     imageAlt: 'Denture questions on metal framework trial insertion and RPD classification',
     pageRef: 55
   },
@@ -112,7 +112,7 @@ export const content_p55: ContentItem[] = [
       'Occlusal rests UR4/UL4, horseshoe connector with collets'
     ],
     keywords: ['buccal shelf', 'Roach T clasp', 'circumferential clasp', 'horseshoe connector', 'collets'],
-    imageUrl: '/images/osce/page56_img01.jpeg',
+    imageUrl: '/images/osce/page56_img01.webp',
     imageAlt: 'Dental arch diagram showing RPD design with clasps and horseshoe connector',
     pageRef: 56
   },
@@ -504,7 +504,7 @@ export const questions_p55: Question[] = [
       'Roach T clasp UR4, circumferential clasp UL4, occlusal rests, horseshoe connector, collets',
       'gingivally approaching clasp, circumferential clasp, rests, horseshoe major connector'
     ],
-    imageUrl: '/images/osce/page56_img01.jpeg',
+    imageUrl: '/images/osce/page56_img01.webp',
     imageAlt: 'Dental arch diagram showing RPD design',
     keywords: ['Roach T clasp', 'circumferential clasp', 'horseshoe connector', 'collets'],
     difficulty: 'hard'

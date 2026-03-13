@@ -20,7 +20,7 @@ export const content_p31: ContentItem[] = [
       'Evaluate TMJ, sinus, and other bony pathology'
     ],
     keywords: ['radiograph report', 'justification', 'grade', 'caries', 'bone levels', 'pathology', 'TMJ', 'sinus'],
-    imageUrl: '/images/osce/page31_img01.jpeg',
+    imageUrl: '/images/osce/page31_img01.webp',
     imageAlt: 'Radiograph reporting checklist',
     pageRef: 31
   },
@@ -59,7 +59,7 @@ export const content_p31: ContentItem[] = [
       'Head tilted: one condyle larger, mandible angles at different heights'
     ],
     keywords: ['OPG', 'positioning error', 'too far back', 'too far in', 'chin down', 'chin up', 'head twisted', 'tongue', 'patient moved', 'slumped', 'tilted'],
-    imageUrl: '/images/osce/page31_img02.jpeg',
+    imageUrl: '/images/osce/page31_img02.webp',
     imageAlt: 'OPG positioning errors with example radiographs',
     pageRef: 31
   },
@@ -81,7 +81,7 @@ export const content_p31: ContentItem[] = [
       'Surgicel is a haemostatic agent made of oxidized cellulose polymer'
     ],
     keywords: ['bleeding socket', 'reactionary haemorrhage', 'secondary haemorrhage', 'Surgicel', 'extraction', 'pack', 'pressure', 'haemostatic'],
-    imageUrl: '/images/osce/page31_img03.jpeg',
+    imageUrl: '/images/osce/page31_img03.webp',
     imageAlt: 'Bleeding socket management',
     pageRef: 31
   },

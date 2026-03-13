@@ -15,7 +15,7 @@ export const content_p47: ContentItem[] = [
       'X-ray tube head horizontal, central ray through cervical spine at rami level'
     ],
     keywords: ['PA mandible', 'posterior-anterior', 'mandible body', 'angles', 'rami', 'condylar necks', 'forehead-nose position'],
-    imageUrl: '/images/osce/page47_img01.jpeg',
+    imageUrl: '/images/osce/page47_img01.webp',
     imageAlt: 'PA mandible radiograph showing fractures of mandible',
     pageRef: 47
   },
@@ -32,7 +32,7 @@ export const content_p47: ContentItem[] = [
       'Central ray horizontal centered through occiput'
     ],
     keywords: ['OM', 'occipito-mental', 'middle third', 'zygomatic complex', 'orbital blowout', 'coronoid process', 'sinuses', '45 degrees'],
-    imageUrl: '/images/osce/page47_img03.jpeg',
+    imageUrl: '/images/osce/page47_img03.webp',
     imageAlt: 'OM view radiograph showing facial skeleton with labelled structures',
     pageRef: 47
   },
@@ -49,7 +49,7 @@ export const content_p47: ContentItem[] = [
       'Central ray at 30 degrees to horizontal, centered through lower border of orbit'
     ],
     keywords: ['OM30', 'occipito-mental 30', 'middle third', 'coronoid process', 'bony displacement', '30 degrees', 'orbit'],
-    imageUrl: '/images/osce/page47_img05.jpeg',
+    imageUrl: '/images/osce/page47_img05.webp',
     imageAlt: 'OM30 view radiograph showing facial skeleton structures',
     pageRef: 47
   },
@@ -67,7 +67,7 @@ export const content_p47: ContentItem[] = [
       'X-ray aimed upwards from below occiput at 30 degrees, centered through condyles'
     ],
     keywords: ['reverse Townes', 'condylar head', 'condylar neck', 'TMJ', 'intra-capsular', 'glenoid fossae', 'mouth open', '30 degrees'],
-    imageUrl: '/images/osce/page47_img07.jpeg',
+    imageUrl: '/images/osce/page47_img07.webp',
     imageAlt: 'Reverse Townes radiograph showing condylar heads',
     pageRef: 47
   },
@@ -85,7 +85,7 @@ export const content_p47: ContentItem[] = [
       'CONTRAINDICATED in suspected neck injuries'
     ],
     keywords: ['submento-vertex', 'SMV', 'skull base', 'sphenoidal sinuses', 'zygomatic arches', 'osteotomy', 'neck injury contraindicated', '5 degrees'],
-    imageUrl: '/images/osce/page48_img01.jpeg',
+    imageUrl: '/images/osce/page48_img01.webp',
     imageAlt: 'Submento-vertex radiograph showing base of skull',
     pageRef: 48
   },
@@ -101,7 +101,7 @@ export const content_p47: ContentItem[] = [
       'Always use multiple radiographic views to assess fractures'
     ],
     keywords: ['mandible fracture', 'OPG', 'mandibular view', 'condylar fracture', 'cortical outline', 'multiple views'],
-    imageUrl: '/images/osce/page48_img03.jpeg',
+    imageUrl: '/images/osce/page48_img03.webp',
     imageAlt: 'OPG showing mandible body fracture with annotated notes',
     pageRef: 48
   },
@@ -133,7 +133,7 @@ export const content_p47: ContentItem[] = [
       'Resorption continues until necrosis overtakes vital tissue, cutting off blood supply'
     ],
     keywords: ['internal resorption', 'root resorption', 'trauma', 'necrotic pulp', 'vital tissue', 'blood supply'],
-    imageUrl: '/images/osce/page48_img05.jpeg',
+    imageUrl: '/images/osce/page48_img05.webp',
     imageAlt: 'Radiograph showing internal root resorption',
     pageRef: 48
   }

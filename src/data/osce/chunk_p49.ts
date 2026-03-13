@@ -14,7 +14,7 @@ export const content_p49: ContentItem[] = [
       'Treatment: RCT'
     ],
     keywords: ['internal resorption', 'pink spot', 'root canal', 'RCT', 'sharply outlined'],
-    imageUrl: '/images/osce/page49_img01.jpeg',
+    imageUrl: '/images/osce/page49_img01.webp',
     imageAlt: 'Radiograph showing internal root resorption with sharply outlined appearance',
     pageRef: 49
   },
@@ -45,7 +45,7 @@ export const content_p49: ContentItem[] = [
       'Treatment: remove source of infection; calcium hydroxide phase in RCT recommended'
     ],
     keywords: ['external inflammatory resorption', 'PDL', 'periradicular', 'calcium hydroxide', 'necrotic', 'percussion'],
-    imageUrl: '/images/osce/page49_img02.jpeg',
+    imageUrl: '/images/osce/page49_img02.webp',
     imageAlt: 'Radiograph showing external inflammatory resorption with loss of tooth structure and alveolar bone',
     pageRef: 49
   },
@@ -63,7 +63,7 @@ export const content_p49: ContentItem[] = [
       'No current treatment; limiting PDL damage is key; flexible splinting preferred over rigid'
     ],
     keywords: ['replacement resorption', 'ankylosis', 'infra-occlusion', 'metallic sound', 'PDL space', 'flexible splint'],
-    imageUrl: '/images/osce/page49_img03.jpeg',
+    imageUrl: '/images/osce/page49_img03.webp',
     imageAlt: 'Radiograph showing replacement resorption with loss of PDL space and bone replacement',
     pageRef: 49
   },
@@ -80,7 +80,7 @@ export const content_p49: ContentItem[] = [
       'Place at right angles to wound, same distance apart, reaching into depth of wound'
     ],
     keywords: ['interrupted sutures', 'right angles', 'wound edge', 'tissue thickness', 'needle curve'],
-    imageUrl: '/images/osce/page49_img04.jpeg',
+    imageUrl: '/images/osce/page49_img04.webp',
     imageAlt: 'Diagram of interrupted suture technique showing needle placement at right angles',
     pageRef: 49
   },
@@ -113,7 +113,7 @@ export const content_p49: ContentItem[] = [
       'Take needle back vertical or horizontal to previous traverse, then ligate'
     ],
     keywords: ['mattress sutures', 'vertical', 'horizontal', 'eversion', 'inversion', 'inaccessible'],
-    imageUrl: '/images/osce/page50_img01.jpeg',
+    imageUrl: '/images/osce/page50_img01.webp',
     imageAlt: 'Diagram showing vertical and horizontal mattress suture techniques',
     pageRef: 50
   },
@@ -146,7 +146,7 @@ export const content_p49: ContentItem[] = [
       'Toothed forceps used to handle tissue during suturing'
     ],
     keywords: ['needle holders', 'thumb', '4th finger', '2/3', 'triangular', 'toothed forceps', 'curved needle'],
-    imageUrl: '/images/osce/page50_img02.jpeg',
+    imageUrl: '/images/osce/page50_img02.webp',
     imageAlt: 'Photos showing correct needle holder grip and needle holder instruments with toothed forceps',
     pageRef: 50
   },

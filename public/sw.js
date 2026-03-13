@@ -1,4 +1,4 @@
-const CACHE_VERSION = "tobys-desk-v2";
+const CACHE_VERSION = "tobys-desk-v3";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const DYNAMIC_CACHE = CACHE_VERSION + "-dynamic";
 const IMAGE_CACHE = CACHE_VERSION + "-images";
@@ -43,6 +43,145 @@ const STATIC_ASSETS = [
   "/squishmallow.png",
 ];
 
+// All content images to pre-cache for offline use
+const ALL_IMAGES = [
+  "/images/aneurysmal-bone-cyst-ct.webp",
+  "/images/antral-mucous-retention-cyst.webp",
+  "/images/branchial-cyst.webp",
+  "/images/dentigerous-cyst.webp",
+  "/images/dermoid-cyst.webp",
+  "/images/eruption-cyst.webp",
+  "/images/globulomaxillary-cyst.webp",
+  "/images/mucocele-lip.webp",
+  "/images/nasolabial-cyst.webp",
+  "/images/nasopalatine-duct-cyst.webp",
+  "/images/odontogenic-keratocyst.webp",
+  "/images/parotid-gland-cyst.webp",
+  "/images/radicular-cyst.webp",
+  "/images/ranula.webp",
+  "/images/residual-cyst.webp",
+  "/images/sebaceous-cyst-scalp.webp",
+  "/images/solitary-bone-cyst.webp",
+  "/images/thyroglossal-cyst.webp",
+  "/images/osce/page01_img01.webp",
+  "/images/osce/page02_img01.webp",
+  "/images/osce/page03_img01.webp",
+  "/images/osce/page03_img02.webp",
+  "/images/osce/page04_img01.webp",
+  "/images/osce/page04_img02.webp",
+  "/images/osce/page05_img01.webp",
+  "/images/osce/page05_img02.webp",
+  "/images/osce/page05_img03.webp",
+  "/images/osce/page06_img01.webp",
+  "/images/osce/page06_img02.webp",
+  "/images/osce/page06_img03.webp",
+  "/images/osce/page06_img04.webp",
+  "/images/osce/page06_img05.webp",
+  "/images/osce/page06_img06.webp",
+  "/images/osce/page06_img07.webp",
+  "/images/osce/page07_img01.webp",
+  "/images/osce/page07_img02.webp",
+  "/images/osce/page07_img03.webp",
+  "/images/osce/page07_img04.webp",
+  "/images/osce/page07_img05.webp",
+  "/images/osce/page08_img01.webp",
+  "/images/osce/page08_img02.webp",
+  "/images/osce/page09_img01.webp",
+  "/images/osce/page10_img01.webp",
+  "/images/osce/page10_img02.webp",
+  "/images/osce/page10_img03.webp",
+  "/images/osce/page10_img04.webp",
+  "/images/osce/page10_img05.webp",
+  "/images/osce/page10_img06.webp",
+  "/images/osce/page11_img01.webp",
+  "/images/osce/page11_img02.webp",
+  "/images/osce/page11_img03.webp",
+  "/images/osce/page11_img04.webp",
+  "/images/osce/page11_img05.webp",
+  "/images/osce/page11_img06.webp",
+  "/images/osce/page11_img07.webp",
+  "/images/osce/page11_img08.webp",
+  "/images/osce/page11_img09.webp",
+  "/images/osce/page11_img10.webp",
+  "/images/osce/page11_img11.webp",
+  "/images/osce/page11_img12.webp",
+  "/images/osce/page12_img01.webp",
+  "/images/osce/page12_img02.webp",
+  "/images/osce/page12_img03.webp",
+  "/images/osce/page12_img04.webp",
+  "/images/osce/page13_img01.webp",
+  "/images/osce/page14_img01.webp",
+  "/images/osce/page14_img02.webp",
+  "/images/osce/page16_img01.webp",
+  "/images/osce/page16_img02.webp",
+  "/images/osce/page17_img01.webp",
+  "/images/osce/page17_img02.webp",
+  "/images/osce/page18_img01.webp",
+  "/images/osce/page18_img02.webp",
+  "/images/osce/page18_img03.webp",
+  "/images/osce/page19_img01.webp",
+  "/images/osce/page20_img01.webp",
+  "/images/osce/page20_img02.webp",
+  "/images/osce/page21_img01.webp",
+  "/images/osce/page21_img02.webp",
+  "/images/osce/page22_img01.webp",
+  "/images/osce/page22_img02.webp",
+  "/images/osce/page22_img03.webp",
+  "/images/osce/page23_img01.webp",
+  "/images/osce/page24_img01.webp",
+  "/images/osce/page25_img01.webp",
+  "/images/osce/page26_img01.webp",
+  "/images/osce/page26_img02.webp",
+  "/images/osce/page27_img01.webp",
+  "/images/osce/page27_img02.webp",
+  "/images/osce/page29_img01.webp",
+  "/images/osce/page30_img01.webp",
+  "/images/osce/page31_img01.webp",
+  "/images/osce/page31_img02.webp",
+  "/images/osce/page31_img03.webp",
+  "/images/osce/page33_img01.webp",
+  "/images/osce/page37_img01.webp",
+  "/images/osce/page38_img01.webp",
+  "/images/osce/page39_img01.webp",
+  "/images/osce/page41_img01.webp",
+  "/images/osce/page41_img02.webp",
+  "/images/osce/page41_img03.webp",
+  "/images/osce/page43_img01.webp",
+  "/images/osce/page44_img01.webp",
+  "/images/osce/page44_img02.webp",
+  "/images/osce/page44_img03.webp",
+  "/images/osce/page44_img04.webp",
+  "/images/osce/page45_img01.webp",
+  "/images/osce/page47_img01.webp",
+  "/images/osce/page47_img02.webp",
+  "/images/osce/page47_img03.webp",
+  "/images/osce/page47_img04.webp",
+  "/images/osce/page47_img05.webp",
+  "/images/osce/page47_img06.webp",
+  "/images/osce/page47_img07.webp",
+  "/images/osce/page47_img08.webp",
+  "/images/osce/page48_img01.webp",
+  "/images/osce/page48_img02.webp",
+  "/images/osce/page48_img03.webp",
+  "/images/osce/page48_img04.webp",
+  "/images/osce/page48_img05.webp",
+  "/images/osce/page49_img01.webp",
+  "/images/osce/page49_img02.webp",
+  "/images/osce/page49_img03.webp",
+  "/images/osce/page49_img04.webp",
+  "/images/osce/page50_img01.webp",
+  "/images/osce/page50_img02.webp",
+  "/images/osce/page50_img03.webp",
+  "/images/osce/page51_img01.webp",
+  "/images/osce/page52_img01.webp",
+  "/images/osce/page55_img01.webp",
+  "/images/osce/page56_img01.webp",
+  "/images/osce/page57_img01.webp",
+  "/images/osce/page57_img02.webp",
+  "/images/osce/page57_img03.webp",
+  "/images/osce/page58_img01.webp",
+];
+
 // Install: pre-cache static assets immediately, then warm route cache in background
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -60,7 +199,7 @@ self.addEventListener("activate", (event) => {
           .filter((key) => !key.startsWith(CACHE_VERSION))
           .map((key) => caches.delete(key))
       )
-    ).then(() => preCacheRoutes())
+    ).then(() => preCacheRoutes()).then(() => preCacheImages())
   );
   self.clients.claim();
 });
@@ -80,10 +219,27 @@ async function preCacheRoutes() {
   }
 }
 
+// Pre-cache all images in background
+async function preCacheImages() {
+  const cache = await caches.open(IMAGE_CACHE);
+  for (const img of ALL_IMAGES) {
+    try {
+      const existing = await cache.match(img);
+      if (existing) continue; // Already cached
+      const response = await fetch(img, { credentials: "same-origin" });
+      if (response.ok) {
+        await cache.put(img, response);
+      }
+    } catch {
+      // Skip failures — will be cached on first view
+    }
+  }
+}
+
 // Listen for messages from the app
 self.addEventListener("message", (event) => {
-  if (event.data === "PRECACHE_ROUTES") {
-    preCacheRoutes();
+  if (event.data === "PRECACHE_ALL") {
+    preCacheRoutes().then(() => preCacheImages());
   }
 });
 

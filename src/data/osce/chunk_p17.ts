@@ -18,7 +18,7 @@ export const content_p17: ContentItem[] = [
       'Chlorphenamine is for early allergic reactions'
     ],
     keywords: ['midazolam', 'oxygen', 'salbutamol', 'chlorphenamine', 'diazepam', 'emergency drugs', 'allergic reaction', 'buccal'],
-    imageUrl: '/images/osce/page17_img01.jpeg',
+    imageUrl: '/images/osce/page17_img01.webp',
     imageAlt: 'Emergency drugs reference from OSCE bible',
     pageRef: 17
   },
@@ -95,7 +95,7 @@ export const content_p17: ContentItem[] = [
       'Consider aesthetics – scarring and recession'
     ],
     keywords: ['MOS', 'flap design', 'blood supply', 'full thickness', 'interdental papilla', 'mental nerve', 'canine eminence', 'sound bone'],
-    imageUrl: '/images/osce/page17_img02.jpeg',
+    imageUrl: '/images/osce/page17_img02.webp',
     imageAlt: 'MOS flap design principles diagram',
     pageRef: 17
   },
@@ -114,7 +114,7 @@ export const content_p17: ContentItem[] = [
       'Semilunar disadvantages: scarring in anterior area, tendency to tear, difficult to suture'
     ],
     keywords: ['2-sided flap', '3-sided flap', 'semilunar', 'attached gingiva', 'tension', 'gingival recession', 'flap types'],
-    imageUrl: '/images/osce/page18_img01.jpeg',
+    imageUrl: '/images/osce/page18_img01.webp',
     imageAlt: 'Diagrams of 2-sided, 3-sided and semilunar flap designs',
     pageRef: 17
   },
@@ -135,7 +135,7 @@ export const content_p17: ContentItem[] = [
       'Document findings, call mother, speak to GDP'
     ],
     keywords: ['safeguarding', 'child protection', 'orofacial trauma', '50%', 'abuse', 'neglect', 'social services', 'consent'],
-    imageUrl: '/images/osce/page18_img02.jpeg',
+    imageUrl: '/images/osce/page18_img02.webp',
     imageAlt: 'How to raise concern about safeguarding flowchart',
     pageRef: 18
   },
@@ -156,7 +156,7 @@ export const content_p17: ContentItem[] = [
       'Consult LSBC/ACPC procedures, dental colleagues, consultant paediatrician, child protection nurse'
     ],
     keywords: ['safeguarding', 'flowchart', 'FTA', 'leading questions', 'LSBC', 'ACPC', 'paediatrician', 'child protection nurse'],
-    imageUrl: '/images/osce/page18_img03.jpeg',
+    imageUrl: '/images/osce/page18_img03.webp',
     imageAlt: 'Safeguarding concern flowchart from Child Protection and Dental Team',
     pageRef: 18
   }

@@ -16,7 +16,7 @@ export const content_p57: ContentItem[] = [
       'Rests resist vertical seating forces directed towards basal seats'
     ],
     keywords: ['rests', 'abutment teeth', 'tooth-borne', 'partial denture', 'edentulous space', 'basal seats', 'support'],
-    imageUrl: '/images/osce/page57_img01.jpeg',
+    imageUrl: '/images/osce/page57_img01.webp',
     imageAlt: 'Question 72 on preventing movement of tooth-borne partial denture base',
     pageRef: 57
   },
@@ -40,7 +40,7 @@ export const content_p57: ContentItem[] = [
       'UE = unerupted, PE = partially erupted, SUP = supernumerary'
     ],
     keywords: ['charting', 'symbols', 'missing tooth', 'extraction', 'retained root', 'caries', 'restoration', 'UE', 'PE', 'supernumerary'],
-    imageUrl: '/images/osce/page57_img02.jpeg',
+    imageUrl: '/images/osce/page57_img02.webp',
     imageAlt: 'Dental charting symbols and notation reference sheet',
     pageRef: 57
   },
@@ -65,7 +65,7 @@ export const content_p57: ContentItem[] = [
       'JBC = Denture (Jacket Crown)'
     ],
     keywords: ['stained fissure', 'fissure sealant', 'amalgam', 'composite', 'glass ionomer', 'FGC', 'MCC', 'APC', 'RBC', 'JBC', 'veneers', 'charting'],
-    imageUrl: '/images/osce/page57_img02.jpeg',
+    imageUrl: '/images/osce/page57_img02.webp',
     imageAlt: 'Charting notation for fissure sealants, restorations, and indirect restorations',
     pageRef: 57
   },
@@ -86,7 +86,7 @@ export const content_p57: ContentItem[] = [
       'Retainer type noted on chart as required'
     ],
     keywords: ['BR', 'BA', 'BP', 'bridge retainer', 'bridge abutment', 'bridge pontic', 'F-C', 'F-F', 'F-M', 'RBB', 'bridgework charting'],
-    imageUrl: '/images/osce/page57_img03.jpeg',
+    imageUrl: '/images/osce/page57_img03.webp',
     imageAlt: 'Bridgework charting notation with examples of bridge types and abbreviations',
     pageRef: 57
   },
@@ -109,7 +109,7 @@ export const content_p57: ContentItem[] = [
       'All 9 principles must be followed by ALL dental professionals'
     ],
     keywords: ['GDC', '9 principles', 'consent', 'complaints', 'patients interests', 'confidentiality', 'raise concerns', 'professional conduct', 'fitness to practise'],
-    imageUrl: '/images/osce/page58_img01.jpeg',
+    imageUrl: '/images/osce/page58_img01.webp',
     imageAlt: 'GDC 9 Principles of professional practice listed 1 through 9',
     pageRef: 58
   },

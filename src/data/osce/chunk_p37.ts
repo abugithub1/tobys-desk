@@ -18,7 +18,7 @@ export const content_p37: ContentItem[] = [
       'Key: acute = severe pain; chronic = low-grade or no pain'
     ],
     keywords: ['reversible pulpitis', 'irreversible pulpitis', 'acute periapical', 'chronic periapical', 'abscess', 'periodontitis', 'throbbing', 'sinus', 'lymphadenopathy'],
-    imageUrl: '/images/osce/page37_img01.png',
+    imageUrl: '/images/osce/page37_img01.webp',
     imageAlt: 'Table comparing pain characteristics across pulpitis and periapical conditions',
     pageRef: 37
   },
@@ -54,7 +54,7 @@ export const content_p37: ContentItem[] = [
       'Oxygen 15L/min, repeat adrenaline every 5 minutes'
     ],
     keywords: ['AVPU', 'ABCDE', 'anaphylaxis', 'adrenaline', 'bronchospasm', '500mcg', '300mcg', '150mcg', '15L/min'],
-    imageUrl: '/images/osce/page38_img01.png',
+    imageUrl: '/images/osce/page38_img01.webp',
     imageAlt: 'ABCDE flowchart and IM adrenaline dose table for anaphylaxis',
     pageRef: 37
   },

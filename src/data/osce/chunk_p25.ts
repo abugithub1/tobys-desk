@@ -68,7 +68,7 @@ export const content_p25: ContentItem[] = [
       'Loss of PDL may indicate ankylosis or bone-cementum fusion'
     ],
     keywords: ['root pattern', 'convergent', 'divergent', 'eccentric', 'bone density', 'trabeculation', 'bisphosphonates', 'PDL', 'ankylosis'],
-    imageUrl: '/images/osce/page25_img01.jpeg',
+    imageUrl: '/images/osce/page25_img01.webp',
     imageAlt: 'Lower first molar radiograph showing convergent roots and heavy restoration – difficult extraction requiring surgery',
     pageRef: 25
   },
@@ -102,7 +102,7 @@ export const content_p25: ContentItem[] = [
       'Conclusion: difficult extraction requiring surgical approach'
     ],
     keywords: ['lower first molar', 'convergent roots', 'root filled', 'fracture risk', 'surgical extraction'],
-    imageUrl: '/images/osce/page25_img01.jpeg',
+    imageUrl: '/images/osce/page25_img01.webp',
     imageAlt: 'Radiograph of lower first molar with convergent roots, heavy restoration and root filling requiring surgical extraction',
     pageRef: 25
   },
@@ -121,7 +121,7 @@ export const content_p25: ContentItem[] = [
       'Third molar in very poor position'
     ],
     keywords: ['OPG', 'third molar', 'second molar', 'extraction', 'prognosis'],
-    imageUrl: '/images/osce/page26_img01.jpeg',
+    imageUrl: '/images/osce/page26_img01.webp',
     imageAlt: 'OPG showing lower left third and second molars with poor prognosis',
     pageRef: 26
   },
@@ -142,7 +142,7 @@ export const content_p25: ContentItem[] = [
       'LA dose limited to 150mg maximum for older patient with ischaemic heart disease'
     ],
     keywords: ['extraction assessment', 'ischaemic heart disease', 'non-vital', 'bone loss', 'warfarin', 'LA dose', '150mg'],
-    imageUrl: '/images/osce/page26_img02.jpeg',
+    imageUrl: '/images/osce/page26_img02.webp',
     imageAlt: 'Radiographs of lower second premolar case with ischaemic heart disease patient showing bone loss and radiolucency',
     pageRef: 26
   },
@@ -459,7 +459,7 @@ export const questions_p25: Question[] = [
     type: 'flashcard',
     question: 'On an OPG showing problems with the lower left third and second molars, what is the likely treatment of choice?',
     answer: 'Extraction of the second molar. Retention of the second molar is poor as prognosis is poor, and the third molar is in a very poor position.',
-    imageUrl: '/images/osce/page26_img01.jpeg',
+    imageUrl: '/images/osce/page26_img01.webp',
     imageAlt: 'OPG showing lower left third and second molars with poor prognosis',
     keywords: ['OPG', 'second molar extraction', 'third molar', 'poor prognosis'],
     difficulty: 'medium'
@@ -519,7 +519,7 @@ export const questions_p25: Question[] = [
     type: 'flashcard',
     question: 'In Case 1 (lower second premolar, 65yo with IHD), list the favourable and unfavourable factors.',
     answer: 'Favourable: about 30% bone loss with mid-root radiolucency (less force needed), simple straight root, no concerning adjacent structures. Unfavourable: non-vital and brittle, cervical margin restoration increases fracture risk. General health: IHD – check warfarin, limit LA to 150mg.',
-    imageUrl: '/images/osce/page26_img02.jpeg',
+    imageUrl: '/images/osce/page26_img02.webp',
     imageAlt: 'Radiographs of lower second premolar case in patient with ischaemic heart disease',
     keywords: ['extraction assessment', 'favourable', 'unfavourable', 'IHD', 'non-vital'],
     difficulty: 'hard'

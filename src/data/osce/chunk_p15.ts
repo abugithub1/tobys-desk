@@ -107,7 +107,7 @@ export const content_p15: ContentItem[] = [
       'Osteosarcoma: pain worse at night, rapid growth, loosening of teeth, metastasises early'
     ],
     keywords: ['OKC', 'odontogenic keratocyst', 'ameloblastoma', 'osteosarcoma', 'sunray', 'aggressive', 'malignant', 'aspiration'],
-    imageUrl: '/images/osce/page16_img01.jpeg',
+    imageUrl: '/images/osce/page16_img01.webp',
     imageAlt: 'Radiograph showing aggressive jaw lesion with irregular margins',
     pageRef: 16
   },
@@ -461,7 +461,7 @@ export const questions_p15: Question[] = [
     type: 'flashcard',
     question: 'Describe the odontogenic keratocyst (OKC) – features, diagnosis, and treatment.',
     answer: 'Nasty and aggressive, can be fatal. Typically 20-30s age group. Diagnose by aspirating contents – HIGH level of protein. Can infiltrate into bone, soft tissues, skull base, and even brain. Must ensure it\'s not ameloblastoma. Must be removed with a margin of bone.',
-    imageUrl: '/images/osce/page16_img01.jpeg',
+    imageUrl: '/images/osce/page16_img01.webp',
     imageAlt: 'Radiograph showing aggressive jaw lesion',
     keywords: ['OKC', 'keratocyst', 'protein', 'aspiration', 'bone margin'],
     difficulty: 'hard'
@@ -476,7 +476,7 @@ export const questions_p15: Question[] = [
     answer: 'sunray',
     fullText: 'Osteosarcoma of the jaw classically shows a sunray appearance on radiograph.',
     blankWord: 'sunray',
-    imageUrl: '/images/osce/page16_img02.jpeg',
+    imageUrl: '/images/osce/page16_img02.webp',
     imageAlt: 'Radiograph showing sunray appearance of osteosarcoma',
     keywords: ['osteosarcoma', 'sunray', 'radiograph'],
     difficulty: 'medium'

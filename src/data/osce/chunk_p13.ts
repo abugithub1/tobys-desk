@@ -15,7 +15,7 @@ export const content_p13: ContentItem[] = [
       'Stage 4 includes re-audit to sustain improvement'
     ],
     keywords: ['audit cycle', 'radiograph quality', 'dose exposure', 'diagnostic accuracy', 'minimum standard', 'optimum standard', 'ideal standard'],
-    imageUrl: '/images/osce/page13_img01.jpeg',
+    imageUrl: '/images/osce/page13_img01.webp',
     imageAlt: 'Radiograph audit cycle diagram showing 4 stages',
     pageRef: 13
   },
@@ -109,7 +109,7 @@ export const content_p13: ContentItem[] = [
       'Actinomycosis: Amoxicillin 500mg tds until resolves; if allergic minocycline 300mg'
     ],
     keywords: ['prescription', 'amoxicillin', 'metronidazole', 'Von Winklehoff', 'doxycycline', 'nystatin', 'BRONJ', 'avulsion', 'candidosis', 'pericoronitis', 'ANUG'],
-    imageUrl: '/images/osce/page14_img01.jpeg',
+    imageUrl: '/images/osce/page14_img01.webp',
     imageAlt: 'Example dental prescription form with patient details and medication',
     pageRef: 14
   },
@@ -128,7 +128,7 @@ export const content_p13: ContentItem[] = [
       'No abbreviations'
     ],
     keywords: ['prescription rules', 'block capitals', 'generic names', 'no abbreviations'],
-    imageUrl: '/images/osce/page14_img01.jpeg',
+    imageUrl: '/images/osce/page14_img01.webp',
     imageAlt: 'Example completed dental prescription form',
     pageRef: 14
   },
@@ -149,7 +149,7 @@ export const content_p13: ContentItem[] = [
       'Put gloves on LAST after PPD; open packets without gloves, touch inside with gloves'
     ],
     keywords: ['infection control', 'blood spillage', 'sodium hypochlorite', '10000ppm', 'clinical waste', 'Ayliffe', 'zoning', 'bare below elbows', 'PPD'],
-    imageUrl: '/images/osce/page14_img02.png',
+    imageUrl: '/images/osce/page14_img02.webp',
     imageAlt: 'NHS alcohol handrub hand hygiene technique poster',
     pageRef: 14
   }

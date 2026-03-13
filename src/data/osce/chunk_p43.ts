@@ -17,7 +17,7 @@ export const content_p43: ContentItem[] = [
       'Emergency treatment should always be provided regardless of trimester'
     ],
     keywords: ['pregnancy', 'gingivitis', 'gingival granuloma', 'morning sickness', 'trimester', 'IVC', 'gag reflex'],
-    imageUrl: '/images/osce/page43_img01.jpeg',
+    imageUrl: '/images/osce/page43_img01.webp',
     imageAlt: 'Summary of dental treatment considerations during pregnancy by trimester',
     pageRef: 43
   },
@@ -76,7 +76,7 @@ export const content_p43: ContentItem[] = [
       'After 10-13 degrees, condyles and disc translate along articular fossa slopes'
     ],
     keywords: ['facebow', 'hinge axis', 'terminal hinge axis', 'condyle', 'articular fossa', 'rotation', 'translation', 'jaw relation'],
-    imageUrl: '/images/osce/page44_img01.jpeg',
+    imageUrl: '/images/osce/page44_img01.webp',
     imageAlt: 'Facebow device and hinge axis diagram',
     pageRef: 43
   },
@@ -97,7 +97,7 @@ export const content_p43: ContentItem[] = [
       'Send bitefork shaft assembly to lab for mounting on articulator'
     ],
     keywords: ['facebow record', 'bitefork', '43mm', 'midline', 'external meatus', 'anterior pointer', 'articulator'],
-    imageUrl: '/images/osce/page44_img02.jpeg',
+    imageUrl: '/images/osce/page44_img02.webp',
     imageAlt: 'Facebow placed on patient showing ear bow and anterior pointer alignment',
     pageRef: 44
   },
@@ -118,7 +118,7 @@ export const content_p43: ContentItem[] = [
       'Offer smoking cessation and explain teamwork needed'
     ],
     keywords: ['delivering bad news', 'periodontal disease', 'failing dentition', 'NSPT', 'smoking cessation', 'XLA', 'motivation'],
-    imageUrl: '/images/osce/page44_img03.jpeg',
+    imageUrl: '/images/osce/page44_img03.webp',
     imageAlt: 'Radiograph and clinical photo showing advanced periodontal disease with bone loss',
     pageRef: 44
   }

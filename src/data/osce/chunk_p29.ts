@@ -21,7 +21,7 @@ export const content_p29: ContentItem[] = [
       'Independent advocate provided in certain situations'
     ],
     keywords: ['MCA 2005', 'mental capacity', 'capacity assessment', 'best interests', 'least restrictive', 'independent advocate', 'unwise decision'],
-    imageUrl: '/images/osce/page29_img01.jpeg',
+    imageUrl: '/images/osce/page29_img01.webp',
     imageAlt: 'DCP treatment plan example with diagnosis and prescriptions',
     pageRef: 29
   },
@@ -66,7 +66,7 @@ export const content_p29: ContentItem[] = [
       'CANNOT diagnose disease or create treatment plans'
     ],
     keywords: ['dental nurse', 'scope of practice', 'cannot diagnose', 'cannot treatment plan', 'under direction'],
-    imageUrl: '/images/osce/page29_img01.jpeg',
+    imageUrl: '/images/osce/page29_img01.webp',
     imageAlt: 'Treatment plan for DCP referral showing diagnosis and treatment steps',
     pageRef: 29
   },
@@ -130,7 +130,7 @@ export const content_p29: ContentItem[] = [
       'LA: 2% lidocaine 1:80,000 adrenaline max 2 x 2.2ml cartridges/visit'
     ],
     keywords: ['treatment plan', 'DH', 'DT', 'lidocaine', 'adrenaline', 'RSI', 'periodontal assessment'],
-    imageUrl: '/images/osce/page29_img01.jpeg',
+    imageUrl: '/images/osce/page29_img01.webp',
     imageAlt: 'Handwritten DCP treatment plan with diagnosis, treatment steps, and prescription details',
     pageRef: 29
   },
@@ -146,7 +146,7 @@ export const content_p29: ContentItem[] = [
       'Used for prognosis and follow-up of traumatised teeth'
     ],
     keywords: ['trauma chart', 'vitality', 'mobility', 'TTP', 'colour', 'sinus', 'paediatric trauma'],
-    imageUrl: '/images/osce/page30_img01.jpeg',
+    imageUrl: '/images/osce/page30_img01.webp',
     imageAlt: 'Trauma chart table with columns for UR2, UR1, UL1, UL2 and rows for vitality, mobility, TTP, colour, sinus',
     pageRef: 30
   },

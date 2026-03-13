@@ -17,7 +17,7 @@ export const content_p11: ContentItem[] = [
       'Major faults (Grade 3): severe cone-cutting, gross exposure error, significant artefacts'
     ],
     keywords: ['grade 1', 'grade 2', 'grade 3', 'radiograph quality', 'retake', 'diagnostically optimal'],
-    imageUrl: '/images/osce/page11_img03.jpeg',
+    imageUrl: '/images/osce/page11_img03.webp',
     imageAlt: 'Periapical radiographs showing Grade 2 quality examples',
     pageRef: 11
   },
@@ -34,7 +34,7 @@ export const content_p11: ContentItem[] = [
       'Film/sensor placed behind tooth of interest'
     ],
     keywords: ['periapical', 'PA', 'crown to apex', 'periapical pathology', 'root morphology'],
-    imageUrl: '/images/osce/page11_img01.jpeg',
+    imageUrl: '/images/osce/page11_img01.webp',
     imageAlt: 'Periapical radiograph showing UL5 region',
     pageRef: 11
   },
@@ -52,7 +52,7 @@ export const content_p11: ContentItem[] = [
       'Detects calculus and checks existing restorations'
     ],
     keywords: ['bitewing', 'BW', 'interproximal caries', 'crestal bone', 'gold standard'],
-    imageUrl: '/images/osce/page11_img07.jpeg',
+    imageUrl: '/images/osce/page11_img07.webp',
     imageAlt: 'Bitewing radiograph showing premolar/molar crowns',
     pageRef: 11
   },
@@ -70,7 +70,7 @@ export const content_p11: ContentItem[] = [
       'Also called DPT or panoramic radiograph'
     ],
     keywords: ['OPT', 'DPT', 'panoramic', 'orthopantomogram', 'rotating'],
-    imageUrl: '/images/osce/page11_img11.jpeg',
+    imageUrl: '/images/osce/page11_img11.webp',
     imageAlt: 'OPT radiograph showing full dental panoramic view',
     pageRef: 11
   },
@@ -88,7 +88,7 @@ export const content_p11: ContentItem[] = [
       'Gold standard technique for periapical radiographs'
     ],
     keywords: ['parallel technique', 'perpendicular', 'Rinn holder', 'aiming ring', 'gold standard'],
-    imageUrl: '/images/osce/page12_img01.jpeg',
+    imageUrl: '/images/osce/page12_img01.webp',
     imageAlt: 'Patient positioned for periapical parallel technique',
     pageRef: 12
   },
@@ -106,7 +106,7 @@ export const content_p11: ContentItem[] = [
       'More prone to distortion than parallel technique'
     ],
     keywords: ['bisecting angle', 'elongation', 'foreshortening', 'distortion', 'shallow palate'],
-    imageUrl: '/images/osce/page12_img02.jpeg',
+    imageUrl: '/images/osce/page12_img02.webp',
     imageAlt: 'Patient positioned for bisecting angle technique',
     pageRef: 12
   },
@@ -124,7 +124,7 @@ export const content_p11: ContentItem[] = [
       'Avoid bent film by careful handling and correct placement'
     ],
     keywords: ['bent film', 'coned off', 'PID', 'collimator', 'distortion', 'unexposed'],
-    imageUrl: '/images/osce/page12_img03.jpeg',
+    imageUrl: '/images/osce/page12_img03.webp',
     imageAlt: 'Examples of bent film and coned off radiograph faults',
     pageRef: 12
   },
@@ -222,7 +222,7 @@ export const questions_p11: Question[] = [
     type: 'flashcard',
     question: 'What does a periapical (PA) radiograph show?',
     answer: 'The entire tooth from crown to apex including surrounding bone. Used to assess periapical pathology, root morphology, root fractures, periapical abscess/granuloma, root resorption, and alveolar bone levels.',
-    imageUrl: '/images/osce/page11_img01.jpeg',
+    imageUrl: '/images/osce/page11_img01.webp',
     imageAlt: 'Periapical radiograph showing UL5 region',
     keywords: ['periapical', 'PA', 'crown to apex'],
     difficulty: 'easy'
@@ -313,7 +313,7 @@ export const questions_p11: Question[] = [
     type: 'flashcard',
     question: 'What structures does an OPT (DPT / panoramic radiograph) show?',
     answer: 'The entire mandible, maxilla, both TMJs, and all teeth in a single image. Uses a rotating X-ray source and detector.',
-    imageUrl: '/images/osce/page11_img11.jpeg',
+    imageUrl: '/images/osce/page11_img11.webp',
     imageAlt: 'OPT radiograph showing full panoramic view',
     keywords: ['OPT', 'DPT', 'panoramic'],
     difficulty: 'easy'
@@ -366,7 +366,7 @@ export const questions_p11: Question[] = [
     type: 'flashcard',
     question: 'Describe the periapical parallel technique.',
     answer: 'Film/sensor placed parallel to long axis of tooth, X-ray beam directed perpendicular to both film and tooth. Uses a Rinn holder with aiming ring. Gold standard – produces most accurate image with minimal distortion.',
-    imageUrl: '/images/osce/page12_img01.jpeg',
+    imageUrl: '/images/osce/page12_img01.webp',
     imageAlt: 'Patient positioned for periapical parallel technique',
     keywords: ['parallel technique', 'perpendicular', 'Rinn holder'],
     difficulty: 'medium'
@@ -419,7 +419,7 @@ export const questions_p11: Question[] = [
     type: 'flashcard',
     question: 'Describe the bisecting angle technique for periapical radiographs.',
     answer: 'X-ray beam directed perpendicular to an imaginary line bisecting the angle between the long axis of the tooth and the film plane. Used when parallel technique not possible (shallow palate, gagging). Prone to elongation or foreshortening.',
-    imageUrl: '/images/osce/page12_img02.jpeg',
+    imageUrl: '/images/osce/page12_img02.webp',
     imageAlt: 'Patient positioned for bisecting angle technique',
     keywords: ['bisecting angle', 'elongation', 'foreshortening'],
     difficulty: 'medium'
@@ -473,7 +473,7 @@ export const questions_p11: Question[] = [
     type: 'flashcard',
     question: 'What is a "coned off" radiograph?',
     answer: 'Part of the image is unexposed (appears white/clear) because the X-ray beam was not aimed at the film correctly. The PID/collimator was misaligned. Common fault with bisecting angle technique.',
-    imageUrl: '/images/osce/page12_img04.jpeg',
+    imageUrl: '/images/osce/page12_img04.webp',
     imageAlt: 'Coned off radiograph fault',
     keywords: ['coned off', 'unexposed', 'PID'],
     difficulty: 'easy'
@@ -486,7 +486,7 @@ export const questions_p11: Question[] = [
     type: 'flashcard',
     question: 'What is a "bent film" fault on a radiograph?',
     answer: 'Film/sensor bent during placement causing distortion – affected area appears stretched or warped. Avoided by careful handling and correct placement.',
-    imageUrl: '/images/osce/page12_img03.jpeg',
+    imageUrl: '/images/osce/page12_img03.webp',
     imageAlt: 'Bent film radiograph fault',
     keywords: ['bent film', 'distortion', 'warped'],
     difficulty: 'easy'

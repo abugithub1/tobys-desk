@@ -23,7 +23,7 @@ export const content_p39: ContentItem[] = [
       'EXPOSURE: rash, ankle oedema, avoid heat loss'
     ],
     keywords: ['ABCDE', 'airway', 'breathing', 'circulation', 'disability', 'exposure', 'sick patient', 'non-rebreather', 'AVPU', 'capillary refill'],
-    imageUrl: '/images/osce/page39_img01.jpeg',
+    imageUrl: '/images/osce/page39_img01.webp',
     imageAlt: 'Airway management illustrations showing chin lift and oropharyngeal airway placement',
     pageRef: 39
   },

@@ -18,7 +18,7 @@ export const content_p23: ContentItem[] = [
       '5% tranexamic acid mouthwash QDS for 2 days reduces bleeding'
     ],
     keywords: ['warfarin', 'vitamin K', 'clotting factors', '2 7 9 10', 'INR', 'Surgicel', 'tranexamic acid', 'Wahl'],
-    imageUrl: '/images/osce/page23_img01.png',
+    imageUrl: '/images/osce/page23_img01.webp',
     imageAlt: 'Warfarin and bisphosphonates OSCE station overview',
     pageRef: 23
   },
@@ -52,7 +52,7 @@ export const content_p23: ContentItem[] = [
       'Signs: delayed healing post-XLA, pain, soft tissue infection/swelling, numbness, paraesthesia, exposed bone'
     ],
     keywords: ['bisphosphonates', 'osteoclasts', 'BRONJ', 'osteonecrosis', 'osteoporosis', 'bone turnover', '8 weeks'],
-    imageUrl: '/images/osce/page23_img01.png',
+    imageUrl: '/images/osce/page23_img01.webp',
     imageAlt: 'Table of bisphosphonate drug names, trade names and primary indications',
     pageRef: 23
   },
@@ -108,7 +108,7 @@ export const content_p23: ContentItem[] = [
       'Step 10: Patient will have blood tests'
     ],
     keywords: ['needlestick', 'sharps injury', 'SIC', 'blood borne virus', 'PEP', 'microbiologist', 'occupational health'],
-    imageUrl: '/images/osce/page24_img01.png',
+    imageUrl: '/images/osce/page24_img01.webp',
     imageAlt: 'Needlestick policy and waste disposal guidance',
     pageRef: 24
   },
@@ -144,7 +144,7 @@ export const content_p23: ContentItem[] = [
       'Low caries risk recall: 12-24 months (children), 18-36 months (adolescents), 24-36 months (adults)'
     ],
     keywords: ['new patient', 'radiographs', 'bitewings', 'panoramic', 'periapical', 'recall', 'caries risk', '6-12 months', '24-36 months'],
-    imageUrl: '/images/osce/page24_img01.png',
+    imageUrl: '/images/osce/page24_img01.webp',
     imageAlt: 'Table showing radiograph selection guidelines by patient age and dental developmental stage',
     pageRef: 24
   },
