@@ -13,19 +13,19 @@ function groupByCategory(topics: typeof TOPIC_CONFIGS) {
   return groups;
 }
 
-// Category ordering + subtle accent colors (no garish gradients)
-const CATEGORY_STYLE: Record<string, { order: number; accent: string }> = {
-  "Oral Surgery": { order: 0, accent: "border-rose-300" },
-  "Prosthodontics": { order: 1, accent: "border-blue-300" },
-  "Endodontics": { order: 2, accent: "border-emerald-300" },
-  "Radiology": { order: 3, accent: "border-sky-300" },
-  "Pharmacology": { order: 4, accent: "border-amber-300" },
-  "Medical": { order: 5, accent: "border-red-300" },
-  "Oral Medicine": { order: 6, accent: "border-orange-300" },
-  "Paediatrics": { order: 7, accent: "border-lime-300" },
-  "Periodontics": { order: 8, accent: "border-pink-300" },
-  "Professional": { order: 9, accent: "border-indigo-300" },
-  "Orthodontics": { order: 10, accent: "border-cyan-300" },
+// Category display ordering
+const CATEGORY_ORDER: Record<string, number> = {
+  "Oral Surgery": 0,
+  "Prosthodontics": 1,
+  "Endodontics": 2,
+  "Radiology": 3,
+  "Pharmacology": 4,
+  "Medical": 5,
+  "Oral Medicine": 6,
+  "Paediatrics": 7,
+  "Periodontics": 8,
+  "Professional": 9,
+  "Orthodontics": 10,
 };
 
 export default function Home() {
@@ -34,7 +34,7 @@ export default function Home() {
   const grouped = groupByCategory(TOPIC_CONFIGS);
 
   const sortedCategories = Object.keys(grouped).sort(
-    (a, b) => (CATEGORY_STYLE[a]?.order ?? 99) - (CATEGORY_STYLE[b]?.order ?? 99)
+    (a, b) => (CATEGORY_ORDER[a] ?? 99) - (CATEGORY_ORDER[b] ?? 99)
   );
 
   return (
@@ -102,8 +102,6 @@ export default function Home() {
       {/* OSCE Topics grouped by category */}
       {sortedCategories.map((category) => {
         const topics = grouped[category];
-        const accent = CATEGORY_STYLE[category]?.accent ?? "border-pink-300";
-
         return (
           <div key={category} className="mb-8">
             <h2 className="text-xs font-semibold uppercase tracking-widest text-rose-400 mb-3 pl-1">
@@ -116,7 +114,7 @@ export default function Home() {
                   <Link
                     key={topic.id}
                     href={`/revise/${topic.id}`}
-                    className={`group flex items-center gap-3 px-4 py-3 bg-white rounded-xl border-l-3 ${accent} border border-pink-100 hover:border-pink-200 transition-all hover:shadow-sm`}
+                    className="group flex items-center gap-3 px-4 py-3 bg-white rounded-xl border border-pink-200 hover:border-pink-300 transition-all hover:shadow-sm"
                   >
                     <span className="flex-shrink-0 text-base">{topic.icon}</span>
                     <div className="flex-1 min-w-0">
